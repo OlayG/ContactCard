@@ -23,10 +23,10 @@
     <ImageView
         android:id="@+id/tv_hello"
         android:layout_width="wrap_content"
-        android:src="@drawable/hello_image"
         android:layout_height="wrap_content"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
+        android:src="@drawable/hello_image"
         app:layout_constraintStart_toEndOf="@id/iv_photo"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,8 +36,8 @@
         android:layout_height="wrap_content"
         android:paddingStart="8dp"
         android:paddingEnd="0dp"
-        android:textSize="22sp"
         android:text="I'm"
+        android:textSize="22sp"
         app:layout_constraintStart_toEndOf="@id/iv_photo"
         app:layout_constraintTop_toBottomOf="@id/tv_hello" />
 
@@ -47,9 +47,9 @@
         android:layout_height="wrap_content"
         android:paddingStart="4dp"
         android:paddingEnd="8dp"
-        android:textStyle="bold"
-        android:textSize="22sp"
         android:text="Olay Gureje"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_im"
         app:layout_constraintTop_toBottomOf="@id/tv_hello" />

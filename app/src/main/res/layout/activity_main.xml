@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".3" />
+
+    <ImageView
+        android:id="@+id/tv_hello"
+        android:layout_width="wrap_content"
+        android:src="@drawable/hello_image"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintStart_toEndOf="@id/iv_photo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="0dp"
+        android:textSize="22sp"
+        android:text="I'm"
+        app:layout_constraintStart_toEndOf="@id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@id/tv_hello" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="4dp"
+        android:paddingEnd="8dp"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Olay Gureje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_im"
+        app:layout_constraintTop_toBottomOf="@id/tv_hello" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Batman at night Superman at day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desc"
+        app:layout_constraintWidth_percent=".65" />
+
+    <TextView
+        android:id="@+id/tv_label_age"
+        style="@style/contact_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AGE"
+        app:layout_constraintStart_toEndOf="@id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+
+    <TextView
+        android:id="@+id/tv_value_age"
+        style="@style/contact_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <TextView
+        android:id="@+id/tv_label_address"
+        style="@style/contact_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADDRESS"
+        app:layout_constraintStart_toEndOf="@id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_age" />
+
+    <TextView
+        android:id="@+id/tv_value_address"
+        style="@style/contact_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="120 MindYoBizzNess Ave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_age" />
+
+    <TextView
+        android:id="@+id/tv_label_email"
+        style="@style/contact_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-MAIL"
+        app:layout_constraintStart_toEndOf="@id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_address" />
+
+    <TextView
+        android:id="@+id/tv_value_email"
+        style="@style/contact_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="olay@ravebizz.com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_address" />
+
+    <TextView
+        android:id="@+id/tv_label_phone"
+        style="@style/contact_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHONE"
+        app:layout_constraintStart_toEndOf="@id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_email" />
+
+    <TextView
+        android:id="@+id/tv_value_phone"
+        style="@style/contact_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2143336969"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_email" />
+
+    <TextView
+        android:id="@+id/tv_label_freelance"
+        style="@style/contact_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FREELANCE"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintStart_toEndOf="@id/iv_photo"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_phone" />
+
+
+    <TextView
+        android:id="@+id/tv_value_freelance"
+        style="@style/contact_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nevuary"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/barrier"
+        app:layout_constraintTop_toBottomOf="@id/tv_label_phone" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="right"
+        app:constraint_referenced_ids="tv_label_freelance" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/footer"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:background="@color/footerColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_android_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_android_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_android_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_android_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_android_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
